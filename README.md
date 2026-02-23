@@ -100,9 +100,10 @@ jupyter notebook notebooks/data_cleaning_eda.ipynb
 
 ## 📝 License
 
-MIT License - feel free to use this project for research and policy analysis.
+MIT License - Ask to use this project for research and policy analysis.
 
 ## 👤 Author
+**Rahul Nayak**
 
 Developed for CMIS 2040 Climate Migration Intelligence initiative.
 
