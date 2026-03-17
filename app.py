@@ -23,8 +23,13 @@ st.markdown("""
 ### 3. TITLE & DEVELOPER NAME
 ### ======================================================
 st.title("🌍 CMIS 2040: Climate Migration Intelligence System")
-st.markdown( "<h3>Developed by : Rahul Nayak</h3>", unsafe_allow_html=True )
-st.markdown( "<p style='text-align: center; color: #a5a5a5; font-size: 18px;'>" "A Predictive Policy Model for Climate-Induced Migration & Economic Impact in India." "</p>", unsafe_allow_html=True )
+
+st.markdown("<h3 style='text-align: center; color: #faca2b;'>Developed by: Rahul Nayak</h3>", unsafe_allow_html=True)
+
+# Professional Info (ML, Data Science, Cloud & SAGE University)
+st.markdown("<p style='text-align: center; color: #4db8ff; font-size: 16px; font-weight: bold;'>🎓 Student: Machine Learning, Data Science & Cloud<br>🏢 SAGE University Bhopal (Powered By Sunstone)</p>", unsafe_allow_html=True)
+
+st.markdown("<p style='text-align: center; color: #a5a5a5; font-size: 18px;'>A Predictive Policy Model for Climate-Induced Migration & Economic Impact in India.</p>", unsafe_allow_html=True)
 st.divider()
 
 ### ======================================================
@@ -43,20 +48,31 @@ df = load_data()
 ### ======================================================
 ### 5. SIDEBAR (PHOTO + OWNER INFO)
 ### ======================================================
-st.sidebar.image( "https://cdn-icons-png.flaticon.com/512/2065/2065064.png", width=100 )
-st.sidebar.subheader(" Project Owner")
+st.sidebar.image("https://cdn-icons-png.flaticon.com/512/2065/2065064.png", width=100)
+st.sidebar.subheader("👨‍💻 Project Owner")
 
 ### 🔥 YOUR PHOTO (LOCAL PATH ADDED HERE)
-st.sidebar.image( "rahul.jpg", width=160, caption="Rahul Nayak" )
-st.sidebar.divider()
+st.sidebar.image("rahul.jpg", width=160)
+st.sidebar.markdown("<h3 style='text-align: center; margin-bottom: 0px; color: #faca2b;'>Rahul Nayak</h3>", unsafe_allow_html=True)
 
+# 🎓 Premium Sidebar Info Box
+st.sidebar.markdown("""
+<div style='background-color: #1e2127; padding: 12px; border-radius: 8px; text-align: center; border-left: 3px solid #4db8ff;'>
+    <p style='font-size: 13px; color: #e0e0e0; line-height: 1.5; margin: 0;'>
+        <b>Domain:</b> Machine Learning, Data Science & Cloud<br>
+        <span style='color: #a5a5a5;'>SAGE University Bhopal<br>
+        <i>(Powered by Sunstone)</i></span>
+    </p>
+</div>
+""", unsafe_allow_html=True)
+st.sidebar.divider()
 ### ======================================================
 ### 6. SIMULATION CONTROLS
 ### ======================================================
 st.sidebar.header("⚙️ Simulation Engine") 
 st.sidebar.markdown("Choose the climate scenario to predict the 2040 impact.")
 
-scenario = st.sidebar.radio( "Select Climate Impact Scenario:", ["🟢 Low Impact", "🟠 Moderate Impact", "🔴 Severe Impact (Extreme Warning)"] )
+scenario = st.sidebar.radio("Select Climate Impact Scenario:", ["🟢 Low Impact", "🟠 Moderate Impact", "🔴 Severe Impact (Extreme Warning)"] )
 
 multiplier = 1.0 
 if "Low" in scenario: 
