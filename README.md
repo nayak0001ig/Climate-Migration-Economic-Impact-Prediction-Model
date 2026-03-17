@@ -7,7 +7,6 @@ A comprehensive predictive intelligence platform analyzing climate-induced migra
 This project combines climate data analysis, socioeconomic vulnerability assessment, and machine learning to predict migration threats and economic impacts across Indian districts.
 
 ## 🎯 Key Features
-
 - **Climate Risk Analysis**: Temperature, AQI, and rainfall impact modeling
 - **Socio-Economic Vulnerability Index**: Combines literacy rates and employment data
 - **Migration Threat Scoring**: Integrated risk assessment across 20+ districts
@@ -100,9 +99,10 @@ jupyter notebook notebooks/data_cleaning_eda.ipynb
 
 ## 📝 License
 
-MIT License - feel free to use this project for research and policy analysis.
+MIT License - Ask to use this project for research and policy analysis.
 
 ## 👤 Author
+**Rahul Nayak**
 
 Developed for CMIS 2040 Climate Migration Intelligence initiative.
 
