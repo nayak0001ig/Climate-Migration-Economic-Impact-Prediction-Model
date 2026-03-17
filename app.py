@@ -88,7 +88,7 @@ if not df.empty:
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Main Dashboard Visualizations
-    col_map, col_charts = st.columns()
+    col_map, col_charts = st.columns(2)
 
     with col_map:
         st.subheader("📍 2040 Migration Threat Map")
